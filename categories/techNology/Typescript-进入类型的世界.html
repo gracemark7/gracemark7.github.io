@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Typescript-进入类型的世界 | Grace&#39;s Blog</title>
+    <meta name="description" content="信仰、工作、生活">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.b2fa97c3.css" as="style"><link rel="preload" href="/assets/js/app.25f0ea44.js" as="script"><link rel="preload" href="/assets/js/21.28410378.js" as="script"><link rel="prefetch" href="/assets/js/10.d5d2af0e.js"><link rel="prefetch" href="/assets/js/11.ba12862c.js"><link rel="prefetch" href="/assets/js/12.eeb86992.js"><link rel="prefetch" href="/assets/js/13.4882fd4d.js"><link rel="prefetch" href="/assets/js/14.00078334.js"><link rel="prefetch" href="/assets/js/15.58a01617.js"><link rel="prefetch" href="/assets/js/16.bc7aa871.js"><link rel="prefetch" href="/assets/js/17.18777b3f.js"><link rel="prefetch" href="/assets/js/18.e47c9be0.js"><link rel="prefetch" href="/assets/js/19.6b63b600.js"><link rel="prefetch" href="/assets/js/20.41efddb4.js"><link rel="prefetch" href="/assets/js/22.8625582d.js"><link rel="prefetch" href="/assets/js/23.6e5545be.js"><link rel="prefetch" href="/assets/js/24.81855949.js"><link rel="prefetch" href="/assets/js/25.d7829336.js"><link rel="prefetch" href="/assets/js/26.fbda8f6e.js"><link rel="prefetch" href="/assets/js/27.f897798b.js"><link rel="prefetch" href="/assets/js/28.a44f0ce5.js"><link rel="prefetch" href="/assets/js/29.47707aff.js"><link rel="prefetch" href="/assets/js/3.bf92a271.js"><link rel="prefetch" href="/assets/js/4.a187db1a.js"><link rel="prefetch" href="/assets/js/5.35112557.js"><link rel="prefetch" href="/assets/js/6.0272308b.js"><link rel="prefetch" href="/assets/js/7.71191f64.js"><link rel="prefetch" href="/assets/js/8.8d6740dd.js"><link rel="prefetch" href="/assets/js/9.69e4dc6f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.32940b96.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b2fa97c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><div><header id="navbarWrapper" class="navbar"><div class="sidebar-button"><i class="iconfont reco-menu"></i></div> <a href="/" class="home-link router-link-active"><img src="/images/chizhiyiheng.png" alt="Grace's Blog" class="logo"> <span class="site-name">Grace's Blog</span></a> <div class="links" style="max-width:nullpx;"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/markTime/" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></div><div class="nav-item"><a href="/techNology/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  工作
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont undefined"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Life.html" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Faith.html" class="nav-link"><i class="iconfont undefined"></i>
+  信仰
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Work.html" class="nav-link"><i class="iconfont undefined"></i>
+  工作
+</a></li></ul></div></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont undefined"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  山月行
+  </a></li><li class="dropdown-item"><!----> <a href="https://q.shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  大厂面试每日一题
+  </a></li><li class="dropdown-item"><!----> <a href="https://liuxiangyang.space/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  刘向洋
+  </a></li><li class="dropdown-item"><!----> <a href="http://blog.devtang.com/2020/01/01/2019-summary/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  唐巧
+  </a></li><li class="dropdown-item"><!----> <a href="https://biaochenxuying.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  夜尽天明
+  </a></li></ul></div></div><div class="nav-item"><a href="/myNews/" class="nav-link"><i class="iconfont undefined"></i>
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xilewangzi" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  Github
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/markTime/" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></div><div class="nav-item"><a href="/techNology/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  工作
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont undefined"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Life.html" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Faith.html" class="nav-link"><i class="iconfont undefined"></i>
+  信仰
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Work.html" class="nav-link"><i class="iconfont undefined"></i>
+  工作
+</a></li></ul></div></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont undefined"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  山月行
+  </a></li><li class="dropdown-item"><!----> <a href="https://q.shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  大厂面试每日一题
+  </a></li><li class="dropdown-item"><!----> <a href="https://liuxiangyang.space/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  刘向洋
+  </a></li><li class="dropdown-item"><!----> <a href="http://blog.devtang.com/2020/01/01/2019-summary/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  唐巧
+  </a></li><li class="dropdown-item"><!----> <a href="https://biaochenxuying.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  夜尽天明
+  </a></li></ul></div></div><div class="nav-item"><a href="/myNews/" class="nav-link"><i class="iconfont undefined"></i>
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xilewangzi" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  Github
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Typescript-进入类型的世界</span> <!----></p> <ul class="sidebar-group-items"></ul></div></li></ul> </div> <div class="page reco-hide" data-v-23c3ef88> <div class="page-title" data-v-23c3ef88><h1 data-v-23c3ef88>Typescript-进入类型的世界</h1> <hr data-v-23c3ef88> <div data-v-48defabe data-v-23c3ef88><i class="iconfont reco-account" data-v-48defabe><span data-v-48defabe>grace</span></i> <i class="iconfont reco-date" data-v-48defabe><span data-v-48defabe>2021/12/7</span></i> <!----> <i class="iconfont reco-tag tags" data-v-48defabe><span class="tag-item" data-v-48defabe>
+      Typescript
+    </span></i></div></div> <div class="content" data-v-23c3ef88><p>Typescript:是一种由微软开发的自由和开源的编程语言，是 js 的一个超集，扩展了 js 的语法</p> <p>增加的功能包括：
+——类型批注和编译时类型检查
+——类型推断
+——类型擦除</p> <hr> <p>——接口（interface）</p> <hr> <p>注意接口不能转换为 JavaScript。 它只是 TypeScript 的一部分。</p> <hr> <p>——枚举</p> <hr> <p>——Mixin
+——泛型编程（Generics）
+——名字空间
+——元组
+——Await</p> <p>ES6 移植而来：</p> <p>——类（class）
+——模块
+——lambda 函数的箭头语法
+——可选参数以及默认参数</p> <p>Ts 通过类型注释提供编译是的静态类型检查</p> <p>Ts 可以处理 js 代码，并对其中的 ts 代码进行编译</p> <p>用于解决大型项目的代码复杂性</p> <p>可以在编译期间发现并纠正错误</p> <p>强类型，支持静态类型和动态类型（js 弱类型，没有静态类型选项）</p> <p>最终编译为 js 代码，使浏览器可以理解</p> <p>支持模块、泛型、和接口</p> <p>社区支持在不断增长</p> <p><a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">在线 TSIDE<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d88a00458ce14c73bd3114239f5cb7e2~tplv-k3u1fbpfcp-zoom-1.image" target="_blank" rel="noopener noreferrer">知识点思维导图<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>——<a href="https://juejin.im/post/6872111128135073806#heading-37" target="_blank" rel="noopener noreferrer">作者<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <!----> <!----> <!----> <div class="page-edit" data-v-23c3ef88><!----> <div class="last-updated" data-v-23c3ef88><span class="prefix" data-v-23c3ef88>Last Updated: </span> <span class="time" data-v-23c3ef88>4/17/2022, 5:16:59 PM</span></div></div> <!----> </div> <div class="valine-wrapper" data-v-1fab1fd0><div id="valine" data-v-1fab1fd0></div></div> <!----> <!----> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-41016a8b data-v-41016a8b><i class="iconfont reco-up" data-v-41016a8b></i></div></div></div></div>
+    <script src="/assets/js/app.25f0ea44.js" defer></script><script src="/assets/js/21.28410378.js" defer></script>
+  </body>
+</html>

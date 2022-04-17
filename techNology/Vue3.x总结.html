@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue3.x总结 | Grace&#39;s Blog</title>
+    <meta name="description" content="信仰、工作、生活">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.b2fa97c3.css" as="style"><link rel="preload" href="/assets/js/app.25f0ea44.js" as="script"><link rel="preload" href="/assets/js/23.6e5545be.js" as="script"><link rel="prefetch" href="/assets/js/10.d5d2af0e.js"><link rel="prefetch" href="/assets/js/11.ba12862c.js"><link rel="prefetch" href="/assets/js/12.eeb86992.js"><link rel="prefetch" href="/assets/js/13.4882fd4d.js"><link rel="prefetch" href="/assets/js/14.00078334.js"><link rel="prefetch" href="/assets/js/15.58a01617.js"><link rel="prefetch" href="/assets/js/16.bc7aa871.js"><link rel="prefetch" href="/assets/js/17.18777b3f.js"><link rel="prefetch" href="/assets/js/18.e47c9be0.js"><link rel="prefetch" href="/assets/js/19.6b63b600.js"><link rel="prefetch" href="/assets/js/20.41efddb4.js"><link rel="prefetch" href="/assets/js/21.28410378.js"><link rel="prefetch" href="/assets/js/22.8625582d.js"><link rel="prefetch" href="/assets/js/24.81855949.js"><link rel="prefetch" href="/assets/js/25.d7829336.js"><link rel="prefetch" href="/assets/js/26.fbda8f6e.js"><link rel="prefetch" href="/assets/js/27.f897798b.js"><link rel="prefetch" href="/assets/js/28.a44f0ce5.js"><link rel="prefetch" href="/assets/js/29.47707aff.js"><link rel="prefetch" href="/assets/js/3.bf92a271.js"><link rel="prefetch" href="/assets/js/4.a187db1a.js"><link rel="prefetch" href="/assets/js/5.35112557.js"><link rel="prefetch" href="/assets/js/6.0272308b.js"><link rel="prefetch" href="/assets/js/7.71191f64.js"><link rel="prefetch" href="/assets/js/8.8d6740dd.js"><link rel="prefetch" href="/assets/js/9.69e4dc6f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.32940b96.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b2fa97c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><div><header id="navbarWrapper" class="navbar"><div class="sidebar-button"><i class="iconfont reco-menu"></i></div> <a href="/" class="home-link router-link-active"><img src="/images/chizhiyiheng.png" alt="Grace's Blog" class="logo"> <span class="site-name">Grace's Blog</span></a> <div class="links" style="max-width:nullpx;"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/markTime/" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></div><div class="nav-item"><a href="/techNology/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  工作
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont undefined"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Life.html" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Faith.html" class="nav-link"><i class="iconfont undefined"></i>
+  信仰
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Work.html" class="nav-link"><i class="iconfont undefined"></i>
+  工作
+</a></li></ul></div></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont undefined"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  山月行
+  </a></li><li class="dropdown-item"><!----> <a href="https://q.shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  大厂面试每日一题
+  </a></li><li class="dropdown-item"><!----> <a href="https://liuxiangyang.space/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  刘向洋
+  </a></li><li class="dropdown-item"><!----> <a href="http://blog.devtang.com/2020/01/01/2019-summary/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  唐巧
+  </a></li><li class="dropdown-item"><!----> <a href="https://biaochenxuying.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  夜尽天明
+  </a></li></ul></div></div><div class="nav-item"><a href="/myNews/" class="nav-link"><i class="iconfont undefined"></i>
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xilewangzi" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  Github
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/markTime/" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></div><div class="nav-item"><a href="/techNology/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  工作
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont undefined"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Life.html" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Faith.html" class="nav-link"><i class="iconfont undefined"></i>
+  信仰
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Work.html" class="nav-link"><i class="iconfont undefined"></i>
+  工作
+</a></li></ul></div></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont undefined"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  山月行
+  </a></li><li class="dropdown-item"><!----> <a href="https://q.shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  大厂面试每日一题
+  </a></li><li class="dropdown-item"><!----> <a href="https://liuxiangyang.space/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  刘向洋
+  </a></li><li class="dropdown-item"><!----> <a href="http://blog.devtang.com/2020/01/01/2019-summary/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  唐巧
+  </a></li><li class="dropdown-item"><!----> <a href="https://biaochenxuying.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  夜尽天明
+  </a></li></ul></div></div><div class="nav-item"><a href="/myNews/" class="nav-link"><i class="iconfont undefined"></i>
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xilewangzi" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  Github
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Vue3.x总结</span> <!----></p> <ul class="sidebar-group-items"></ul></div></li></ul> </div> <div class="page reco-hide" data-v-23c3ef88> <div class="page-title" data-v-23c3ef88><h1 data-v-23c3ef88>Vue3.x总结</h1> <hr data-v-23c3ef88> <div data-v-48defabe data-v-23c3ef88><i class="iconfont reco-account" data-v-48defabe><span data-v-48defabe>grace</span></i> <i class="iconfont reco-date" data-v-48defabe><span data-v-48defabe>2022/1/10</span></i> <!----> <i class="iconfont reco-tag tags" data-v-48defabe><span class="tag-item" data-v-48defabe>
+      vue
+    </span></i></div></div> <div class="content" data-v-23c3ef88><p>Vue3 最新版，增加 Composition API 组合语法，基于 Proxy 的响应系统、自定义渲染器等
+比 Vue2，Vue3 全部支持 TS，渲染性能提升，全新的 API，基于 Vite 快速搭建 vue 项目</p> <h5 id="一、vue-基础语法-composition-api"><a href="#一、vue-基础语法-composition-api" class="header-anchor">#</a> 一、Vue 基础语法-Composition API</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>// createApp 表示创建一个 Vue 应用, 存储到 app 变量中
+  // 传入的参数表示，这个应用最外层的组件，应该如何展示
+  // MVVM 设计模式，M -&gt; Model 数据， V -&gt; View 视图， VM -&gt; ViewModel 视图数据连接层
+  const app = Vue.createApp({
+    data() {
+      return {
+        message: 'hello world'
+      }
+    },
+    template: &quot;&lt;div&gt;{{message}}&lt;/div&gt;&quot;
+  });
+  // vm 代表的就是 Vue 应用的根组件
+  const vm = app.mount('#root');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>动机（为什么会用）：
+<a href="https://blog.csdn.net/weixin_46837985/article/details/105852706" target="_blank" rel="noopener noreferrer">Vue 3.0 到底好在哪里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>首先抛出 Vue2 的代码模式下存在的几个问题。随着功能的增长，复杂组件的代码变得越来越难以维护。尤其发生你去新接手别人的代码时。根本原因是 Vue 的现有 API 通过「选项」组织代码，但是在大部分情况下，通过逻辑考虑来组织代码更有意义。</p> <p>缺少一种比较「干净」的在多个组件之间提取和复用逻辑的机制。</p> <p>类型推断不够友好。</p> <p>安装开发环境：
+<a href="https://cli.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">Vue cli<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>运行安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install -g @vue/cli
+# OR
+yarn global add @vue/cli
+#查看当前安装版本
+vue --version
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>更新</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm uninstall -g vue-cli
+npm install -g @vue/cli
+#安装出错可以用cnpm 尝试
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>查看版本</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>vue -V
+@vue/cli 4.5.4
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>eslint 插件</p> <p><a href="https://github.com/vuejs/vetur" target="_blank" rel="noopener noreferrer">Vetur 插件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>1、Ref 语法</p> <p>setup 方法</p> <p>ref 函数：是个函数，接受一个参数，返回响应对象。
+我们初始化的这个 0 作为参数包裹到这个对象中去，在未来可以检测到改变并作出对应的相应。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;h1&gt;{{count}}&lt;/h1&gt;
+  &lt;h1&gt;{{double}}&lt;/h1&gt;
+  &lt;button @click=&quot;increase&quot;&gt;+1&lt;/button&gt;&lt;/template&gt;
+
+import { ref } from &quot;vue&quot;
+
+setup() {
+  // ref 是一个函数，它接受一个参数，返回的就是一个神奇的 响应式对象 。我们初始化的这个 0 作为参数包裹到这个对象中去，在未来可以检测到改变并作出对应的相应。
+  const count = ref(0)
+  const double = computed(() =&gt; {
+    return count.value * 2
+  })
+  const increase = () =&gt; {
+    count.value++
+  }
+  return {
+    count,
+    increase,
+    double
+  }}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>2、Reactive 函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { ref, computed, reactive, toRefs } from 'vue'
+
+interface DataProps {
+  count: number;
+  double: number;
+  increase: () =&gt; void;}
+
+setup() {
+  const data: DataProps  = reactive({
+    count: 0,
+    increase: () =&gt; { data.count++},
+    double: computed(() =&gt; data.count * 2)
+  })
+  const refData = toRefs(data)
+  return {
+    ...refData
+  }}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>使用 ref 还是 reactive 可以现在这样的准则：</p> <p>第一，就像些普通 js 代码一样，选择原始类型和对象类型一样，选择 ref 还是 reactive</p> <p>第二，所有场景都使用 reactive，记得使用 toRefs 保证 reactive 对象属性保持响应性</p> <p>3、vue3 响应原理：</p> <p>Proxy</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Object.defineProperty(data,'count',{
+      get(){},
+      set(){}
+    })
+
+    new Proxy(data,{
+      get(key){},
+      set(key,value)
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>4、生命周期</p> <p>在 setup 中使用的 hook 名称和原来生命周期的对应关系</p> <p>beforeCreate -&gt; 不需要</p> <p>created -&gt; 不需要</p> <p>beforeMount -&gt; onBeforeMount</p> <p>mounted -&gt; onMounted</p> <p>beforeUpdate -&gt; onBeforeUpdate</p> <p>updated -&gt; onUpdated</p> <p>beforeUnmount -&gt; onBeforeUnmount</p> <p>unmounted -&gt; onUnmounted</p> <p>errorCaptured -&gt; onErrorCaptured</p> <p>renderTracked -&gt; onRenderTracked</p> <p>renderTriggered -&gt; onRenderTriggered</p> <p>5、侦测变化 watch</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const updataGreeting = () =&gt; {
+    greetings.value += &quot;-a-&quot;
+  }
+  watch([greetings, () =&gt; data.count],(newValue,oldValue) =&gt; {
+    console.log(&quot;old&quot;,oldValue)
+    console.log(&quot;new&quot;,newValue)
+    document.title = 'updated' + greetings.value + data.count
+  })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>6、模块化</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { ref } from 'vue'import axios from 'axios'// 添加一个参数作为要使用的 地址const useURLLoader = (url: string) =&gt; {// 声明几个ref，代表不同的状态和结果
+  const result = ref(null)
+  const loading = ref(true)
+  const loaded = ref(false)
+  const error = ref(null)
+
+// 发送异步请求，获得data// 由于 axios 都有定义，所以rawData 可以轻松知道其类型
+  axios.get(url).then((rawData) =&gt; {
+    loading.value = false
+    loaded.value = true
+    result.value = rawData.data
+  }).catch((e) =&gt; {
+    error.value = e
+  })
+  // 将这些ref 一一返回
+  return {
+    result,
+    loading,
+    error,
+    loaded
+  }}
+
+
+export default useURLLoader
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p><a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">请求获取狗图片 API<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://api.thecatapi.com/v1/images/search" target="_blank" rel="noopener noreferrer">请求获取猫图片 API<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>7、模块化结合 typescript - 泛型改造</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 为函数添加泛型
+function useURLLoader&lt;T&gt;(url: string) {
+  const result = ref&lt;T | null&gt;(null)
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// 在应用中的使用，可以定义不同的数据类型interface DogResult {
+  message: string;
+  status: string;}interface CatResult {
+  id: string;
+  url: string;
+  width: number;
+  height: number;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>8、Typescript 对 Vue3 的加持：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { defineCompoent } from &quot;vue&quot;
+  //defineCompoent()让传入的对象获得类型
+  const component = defineCompoent({
+    name:&quot;&quot;,
+    props ;{
+      msg:String
+    },
+    emits:{},//自定义事件
+    setup(props,context){
+      //传入的这两个参数理解context. （attrs、slots、emit）；props是一个响应式对象
+    }
+  })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>新推出的特性 Teleport 瞬间移动</p> <p>异步请求 Suspense 是 Vue3 推出的一个内置的特殊组件，要返回一个 promise</p> <p>Global API Change 全局 API 修改</p> <p>Vue2 入口文件写法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vue from ‘Vue’
+
+Vue.use(....)
+Vue.mixin(...)
+
+new Vue({
+  render:h=&gt;h(App)
+}).$mount('#app')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>Vue2 全局 API 遇到的问题：</p> <p>单元测试中，全局配置非常容易污染全局环境</p> <p>在不同的 apps 中，共享一份有不同配置的 Vue 对象，也变得非常困难</p> <p>Vue3 新的写法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { createApp } from ‘Vue’
+// createApp 表示创建一个 Vue 应用, 存储到 app 实例 变量中
+  // 传入的参数表示，这个应用最外层的组件，应该如何展示
+  // MVVM 设计模式，M -&gt; Model 数据， V -&gt; View 视图， VM -&gt; ViewModel 视图数据连接层
+  const app = Vue.createApp({
+    data() {
+      return {
+        message: 'hello world'
+      }
+    },
+    template: &quot;&lt;div&gt;{{message}}&lt;/div&gt;&quot;
+  });
+  // vm 代表的就是 Vue 应用的根组件
+  const vm = app.mount('#root');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>全局配置</p> <p>Vue.config --&gt; app.config</p> <p>...</p> <p>全局注册类 API</p> <p>Vue.component --&gt; app.component
+...</p> <p>行为扩展类：
+Vue.mixin --&gt; app.mixin
+Vue.use() --&gt;app.use()</p> <p>Global API Treeshaking 打包工具提出的概念</p> <h5 id="二、vue-router-和-vuex"><a href="#二、vue-router-和-vuex" class="header-anchor">#</a> 二、vue-router 和 vuex</h5></div> <!----> <!----> <!----> <div class="page-edit" data-v-23c3ef88><!----> <div class="last-updated" data-v-23c3ef88><span class="prefix" data-v-23c3ef88>Last Updated: </span> <span class="time" data-v-23c3ef88>4/17/2022, 5:16:59 PM</span></div></div> <!----> </div> <div class="valine-wrapper" data-v-1fab1fd0><div id="valine" data-v-1fab1fd0></div></div> <!----> <!----> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-41016a8b data-v-41016a8b><i class="iconfont reco-up" data-v-41016a8b></i></div></div></div></div>
+    <script src="/assets/js/app.25f0ea44.js" defer></script><script src="/assets/js/23.6e5545be.js" defer></script>
+  </body>
+</html>

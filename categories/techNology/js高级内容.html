@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Javascript进阶 | Grace&#39;s Blog</title>
+    <meta name="description" content="信仰、工作、生活">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.b2fa97c3.css" as="style"><link rel="preload" href="/assets/js/app.25f0ea44.js" as="script"><link rel="preload" href="/assets/js/25.d7829336.js" as="script"><link rel="prefetch" href="/assets/js/10.d5d2af0e.js"><link rel="prefetch" href="/assets/js/11.ba12862c.js"><link rel="prefetch" href="/assets/js/12.eeb86992.js"><link rel="prefetch" href="/assets/js/13.4882fd4d.js"><link rel="prefetch" href="/assets/js/14.00078334.js"><link rel="prefetch" href="/assets/js/15.58a01617.js"><link rel="prefetch" href="/assets/js/16.bc7aa871.js"><link rel="prefetch" href="/assets/js/17.18777b3f.js"><link rel="prefetch" href="/assets/js/18.e47c9be0.js"><link rel="prefetch" href="/assets/js/19.6b63b600.js"><link rel="prefetch" href="/assets/js/20.41efddb4.js"><link rel="prefetch" href="/assets/js/21.28410378.js"><link rel="prefetch" href="/assets/js/22.8625582d.js"><link rel="prefetch" href="/assets/js/23.6e5545be.js"><link rel="prefetch" href="/assets/js/24.81855949.js"><link rel="prefetch" href="/assets/js/26.fbda8f6e.js"><link rel="prefetch" href="/assets/js/27.f897798b.js"><link rel="prefetch" href="/assets/js/28.a44f0ce5.js"><link rel="prefetch" href="/assets/js/29.47707aff.js"><link rel="prefetch" href="/assets/js/3.bf92a271.js"><link rel="prefetch" href="/assets/js/4.a187db1a.js"><link rel="prefetch" href="/assets/js/5.35112557.js"><link rel="prefetch" href="/assets/js/6.0272308b.js"><link rel="prefetch" href="/assets/js/7.71191f64.js"><link rel="prefetch" href="/assets/js/8.8d6740dd.js"><link rel="prefetch" href="/assets/js/9.69e4dc6f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.32940b96.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b2fa97c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><div><header id="navbarWrapper" class="navbar"><div class="sidebar-button"><i class="iconfont reco-menu"></i></div> <a href="/" class="home-link router-link-active"><img src="/images/chizhiyiheng.png" alt="Grace's Blog" class="logo"> <span class="site-name">Grace's Blog</span></a> <div class="links" style="max-width:nullpx;"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/markTime/" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></div><div class="nav-item"><a href="/techNology/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  工作
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont undefined"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Life.html" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Faith.html" class="nav-link"><i class="iconfont undefined"></i>
+  信仰
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Work.html" class="nav-link"><i class="iconfont undefined"></i>
+  工作
+</a></li></ul></div></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont undefined"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  山月行
+  </a></li><li class="dropdown-item"><!----> <a href="https://q.shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  大厂面试每日一题
+  </a></li><li class="dropdown-item"><!----> <a href="https://liuxiangyang.space/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  刘向洋
+  </a></li><li class="dropdown-item"><!----> <a href="http://blog.devtang.com/2020/01/01/2019-summary/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  唐巧
+  </a></li><li class="dropdown-item"><!----> <a href="https://biaochenxuying.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  夜尽天明
+  </a></li></ul></div></div><div class="nav-item"><a href="/myNews/" class="nav-link"><i class="iconfont undefined"></i>
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xilewangzi" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  Github
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><div class="side-search-wrapper"><div class="search-box" data-v-1b2e3b29><input aria-label="Search" autocomplete="off" spellcheck="false" value="" data-v-1b2e3b29> <i class="iconfont reco-search" data-v-1b2e3b29></i> <!----></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/markTime/" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></div><div class="nav-item"><a href="/techNology/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  工作
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont undefined"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Life.html" class="nav-link"><i class="iconfont undefined"></i>
+  生活
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Faith.html" class="nav-link"><i class="iconfont undefined"></i>
+  信仰
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Work.html" class="nav-link"><i class="iconfont undefined"></i>
+  工作
+</a></li></ul></div></div><div class="nav-item"><a href="/tags/" class="nav-link"><i class="iconfont undefined"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  山月行
+  </a></li><li class="dropdown-item"><!----> <a href="https://q.shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  大厂面试每日一题
+  </a></li><li class="dropdown-item"><!----> <a href="https://liuxiangyang.space/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  刘向洋
+  </a></li><li class="dropdown-item"><!----> <a href="http://blog.devtang.com/2020/01/01/2019-summary/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  唐巧
+  </a></li><li class="dropdown-item"><!----> <a href="https://biaochenxuying.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  夜尽天明
+  </a></li></ul></div></div><div class="nav-item"><a href="/myNews/" class="nav-link"><i class="iconfont undefined"></i>
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xilewangzi" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  Github
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Javascript进阶</span> <!----></p> <ul class="sidebar-group-items"></ul></div></li></ul> </div> <div class="page reco-hide" data-v-23c3ef88> <div class="page-title" data-v-23c3ef88><h1 data-v-23c3ef88>Javascript进阶</h1> <hr data-v-23c3ef88> <div data-v-48defabe data-v-23c3ef88><i class="iconfont reco-account" data-v-48defabe><span data-v-48defabe>grace</span></i> <i class="iconfont reco-date" data-v-48defabe><span data-v-48defabe>2021/8/15</span></i> <!----> <i class="iconfont reco-tag tags" data-v-48defabe><span class="tag-item" data-v-48defabe>
+      JavaScript
+    </span></i></div></div> <div class="content" data-v-23c3ef88><h4 id="一、阶段一-js-核心运行机制及高阶编程"><a href="#一、阶段一-js-核心运行机制及高阶编程" class="header-anchor">#</a> 一、阶段一 JS 核心运行机制及高阶编程</h4> <h5 id="_1、堆栈内存底层处理机制"><a href="#_1、堆栈内存底层处理机制" class="header-anchor">#</a> 1、堆栈内存底层处理机制</h5> <p><strong>函数执行：</strong></p> <p>1、形成一个全新的、私有的上下文 EC
+2、当前私有的上下文中，有一个存放本上下文内声明的变量的地方 AO 私有变量对象--&gt;这里的变量都是当前上下文内的私有变量[当前上下文中声明的变量、形参变量]
+3、进栈执行
+4、代码进栈执行还要处理很多事情：
+1）、初始化作用域链[scope-chain]：&lt;当前自己的上下文、上级上下文（创建函数时形成的作用域）&gt;-当前函数的上级上下文是创建函数所在的上下文（作用域）
+作用域链查找机制：变量--私有变量--上级上下文的私有变量--EC(G) 2)、初始化 this 3)、初始化 arguments 4)、形参赋值：形参都是私有变量（放到 AO 中），如果不传递实参，默认是 undefined 5)、变量提升
+5、代码自上向下执行
+6、一般情况下，函数执行上下文，进栈执行后，会默认出栈释放掉[私有上下文中存储的私有变量和一些值都会被释放]
+目的：为了优化内存空间，减少内存消耗，提高页面或计算机处理速度</p> <p><strong>闭包</strong>：函数执行形成私有上下文，此上下文中的私有变量，和上下文以外的变量互不干扰；也就是当前上下文把
+这些变量保护起来了，我们把函数这种保护机制称为闭包[闭包不是具体代码，而是一种机制]；
+上下文不被释放，保护了私有变量，变量和存储值不被释放，保存起来[保存]
+利用这两种机制可实现高阶编程技巧</p> <p><strong>不能出栈释放</strong>：当前上下文中某些内容[一般指堆空间]被上下文以外的事务占用了，则无法释放
+假设一旦被释放，后期外部事务就无法找到对应的内容了</p> <p>作业 3：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a=1;
+var obj ={
+   name:&quot;tom&quot;
+}
+function fn(){
+   var a2 = a;
+  //  console.log(obj2)
+   obj2 = obj;
+   a2 =a;
+   obj2.name =&quot;jack&quot;;
+}
+fn();
+console.log(a);
+console.log(obj);
+
+//obj2不是私有的，向全局找，如果全局也没有
+    //  情况1：输出obj2  直接报错  Uncaught ReferenceError: obj2 is not defined
+    //  情况2：赋值操作  相当于给window设置一个obj2的属性，并且赋值  window.obj2=0x001
+    a2 = a; //私有a2=1
+    obj2.name = &quot;jack&quot;; //遇到obj2，但是发现全局没有这个变量，它会继续再看window下是否有这个属性，如果window下有这个属性，则获取属性值，如果window下也没有这个属性，则报错（未定义变量） -&gt;把0x001中的name属性值改为'jack'
+
+
+// VO(G):全局变量对象「全局上下文中声明的变量」
+// GO「window」:全局对象 「浏览器默认开辟的一个堆内存，存储供JS调用的各种API的」
+console.log(a);//首先看VO(G)中是否有，如果没有，则再看GO中有没有，如果也没有，则报错：a is not defined
+
+// 在全局上下文中
+var n = 10;
+//老版本机制：VO(G)中声明一个n的全局变量，赋值10；特殊：“全局上下文”中，“基于var/function声明”的变量，也相当于给GO新增私有属性；并且之间存在映射关系「一个修改，另外一个也跟着修改」；
+//新版本机制：“全局上下文”中，“基于var/function声明”的变量，直接都当做GO的属性存储起来；
+
+基于let/const声明的变量，只是给VO(G)中设置全局变量，和GO没有任何的关系；
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>作业 4：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> * EC(G)变量提升
+ *   var a;
+ *   fn=0x000; [[scope]]:EC(G)
+ *!/
+var a = 1;
+function fn(a) {
+    /!*
+     * EC(FN)
+     *   作用域链:&lt;EC(FN),EC(G)&gt;
+     *   形参赋值:a=1
+     *   变量提升:
+     *     var a; 「没用了：因为此时私有上下文中已经有a了，不会重复声明」
+     *     a=0x001; [[scope]]:EC(FN) 「不会重复声明，但是需要重新赋值」
+     *!/
+    console.log(a); //=&gt;函数
+    var a = 2; //私有a重新赋值为2
+    function a() {}
+    console.log(a); //=&gt;2
+}
+fn(a); //fn(1)
+console.log(a); //=&gt;1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p><strong><em>a、变量提升</em></strong></p> <p><strong><em>当前上下文中</em></strong>（全局、私有、块级），js 代码自上而下执行之前，浏览器会提前处理一些事情（可以理解为词法解析的一个环节，词法解析一定发生在代码执行之前【编译阶段】）</p> <p>声明 var a</p> <p>定义是赋值 a = 10</p> <p>会把当前上下文中带有 VAR/FUNCTION 关键字的进行提前的声明或者定义</p> <p>全局上下文中的变量提升
+EC(G)只有 VAR/FUNCTION 会变量提升(ES6 中 LET 和 CONST 不会)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>func=函数 函数在这个阶段赋值都做了
+func()
+function func(){}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>var func = function （）{
+真实项目中建议用函数表达式创建函数，因为这样在变量提升阶段只会声明，不会赋值
+}
+
+func()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>var func = function AAA(){
+把原本作为值的函数表达式匿名函数“具名化”,（虽然是具名化，这个名字不能在外面访问=》也就是不能在当前上下文中创建这个名字）
+当函数执行，在形成的私有上下文中，会把这个具名的名字作为私有上下文中的变量（值就是这个函数）来进行处理
+AAA --&gt; 当前函数
+AAA() 递归调用，一般递归是有结束条件
+}
+AAA()// AAA is not defined
+func（）
+
+
+setTimeout（function func（）{
+   func（）
+}，1000）
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><strong>基于'VAR 或者 FUNCTION 在全局上下文中声明的变量-全局变量，会映射到 GO 全局对象 window 上一份，作为他的属性；而且接下来是一个修改，另外一个也会跟着修改'</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>if(!(&quot;a&quot; in window)){
+   var a = 1
+}
+
+console.log(a)// undefined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>不论条件是否成立，都需要变量提升（条件中带 function 的新版本中浏览器中只会提前声明，不会再提前赋值了）</strong></p> <p><strong><em>b、this 的几种情况</em></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var x = 3,
+    obj = {x: 5};
+obj.fn = (function () {
+    this.x *= ++x;
+    return function (y) {
+        this.x *= (++x)+y; 14 * 13+4
+        console.log(x);
+    }
+})();
+var fn = obj.fn;
+obj.fn(6);
+fn(4);
+console.log(obj.x, x);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>this: 函数的执行主体（不等价于执行上下文「作用域」） -&gt; 谁把这个函数执行的
+ *   人具备的方法：吃饭
+ *   王光慧“童鞋”，早上去北京大饭店吃饭「鸡蛋灌饼，加 10 个鸡蛋」
+ *     + 谁吃饭？ 王光慧「方法执行主体:this」
+ *     + 在哪吃饭？北京饭店「方法执行作用域:scope」
+ *
+ * 想要分清楚函数执行的执行主体(this)，可以按照如下的规律来分析:
+ *   + 事件绑定
+ *     + 不论是 DOM0 还是 DOM2 级事件绑定，给元素 E 的某个事件行为绑定方法，当事件触发方法执行，方法中的 this 是当前元素 E 本身
+ *     + 特殊情况：
+ *
+ *       + IE6~8 中基于 attachEvent 实现 DOM2 事件绑定，事件触发方法执行，方法中的 this 不在是元素本身，大部分情况都是 window
+ *       + 如果基于 call/apply/bind 强制改变了函数中的 this，我们也是以强制改变的为主
+ *   + 普通函数执行
+ *     + 函数执行，看函数前面是否有“点”，有“点”，“点”前面是谁 this 就是谁，没有“点”this 是 window「JS 严格模式下是 undefined」
+ *       fn() -&gt; this:window/undefined
+ *       obj.fn() -&gt; this:obj
+ *       xxx.<strong>proto</strong>.fn() -&gt; this:xxx.<strong>proto</strong>
+ *       ...
+ *     + 自执行函数执行：其内的 this 一般都是 window/undefined
+ *     + 回调函数中的 this 一般也是 window/undefined，除非做过特殊的处理
+ *     + 括号表达中的 this 很变态
+ *     + ...
+ *   + 构造函数执行
+ *   + 箭头函数执行
+ *   + 基于 call/apply/bind 强制改变 this
+ *
+ * 在浏览器端运行 JS 代码，非函数中的 this 一般都是 window；研究 this 都是+
+ * 研究函数中的 this；有一个特殊的，就是 ES6+中“块级上下文”中的 this，是其所在上下文中的 this「理解为：块级上下文是没有自己 this 的」；</p> <p>JS 中 THIS 的五种情况梳理事件绑定函数执行（包括</p> <p>自执行函数）</p> <p>new 构造函数</p> <p>箭头函数</p> <p>call/apply/bind</p> <p>截图++++++</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var foo = 1；
+
+function  bar(){
+    //var foo 变量提升
+    if(!foo){
+        var foo = 10;
+    }
+    console.log(foo)//10
+}
+
+
+var foo = 1；
+
+function  bar(){
+    //var foo 变量提升
+    if(false){
+        var foo = 10;
+    }
+    console.log(foo)//undefined 找自己私有 变量提升
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table" target="_blank" rel="noopener noreferrer">运算符优先级<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>成员访问 20</p> <h5 id="_2、函数底层处理机制（创建-执行）"><a href="#_2、函数底层处理机制（创建-执行）" class="header-anchor">#</a> 2、函数底层处理机制（创建+执行）</h5> <p>创建函数：和创建变量区别不大，-&gt;【函数名其实就是变量】</p> <p>1、单独开辟一个堆内存【16 进制地址】，函数的堆内存中存放的是函数体中的“代码字符串”</p> <p>2、创建函数的时候，就声明了作用域（scope），也就是所在的上下文环境</p> <p>3、把 16 进制的地址存放到栈中，共变量（函数名等）关联引用即可</p> <p>执行函数：</p> <p>执行函数目的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var x = [12, 23];
+function fn(y) {
+y[0] = 100;
+y = [100];
+y[1] = 200;
+console.log(y);
+}
+fn(x);
+console.log(x);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h6 id="i-和-i-的区别？"><a href="#i-和-i-的区别？" class="header-anchor">#</a> ++i 和 i++ 的区别？</h6> <p>相同点：都是在自身基础上累加 1
+不同点：计算和累加的顺序
+++i ：自身先累加 1，根据累加后的结果进行运算
+i++：先根据原始值进行运算，运算完成后再累加 1</p> <p>(5 + i++); // 5+(i++) 都是一样的效果 -&gt; 5+i=6  i++:i=2</p> <p>i++和++i 一定是数学运算「“+N”也是把 N 变为数字类型的值」</p> <h5 id="闭包：函数执行形成一个私有上下文，此上下文中的私有变量，和上下文以外的变量互不干扰，也就是当前上下文把这些变量保护起来了，我们把函数的这种保护机制称为闭包。【闭包不是具体的代码，而是一种机制】"><a href="#闭包：函数执行形成一个私有上下文，此上下文中的私有变量，和上下文以外的变量互不干扰，也就是当前上下文把这些变量保护起来了，我们把函数的这种保护机制称为闭包。【闭包不是具体的代码，而是一种机制】" class="header-anchor">#</a> 闭包：函数执行形成一个私有上下文，此上下文中的私有变量，和上下文以外的变量互不干扰，也就是当前上下文把这些变量保护起来了，我们把函数的这种保护机制称为闭包。【闭包不是具体的代码，而是一种机制】</h5> <p>形成的私有上下文不被释放，此时不仅保护私有变量，而且变量和存储的值也不会被释放，保存起来了。
+保护、保存这两种机制，可以实现高阶编程技巧。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var x = 100;
+function fn(){
+   var x = 200;
+   return function (y) {
+       console.log(y+x++)
+   }
+}
+var f = fn();
+f(10);
+f(20);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h6 id="_3、闭包作用域练习题-1（浏览器垃圾回收机制）"><a href="#_3、闭包作用域练习题-1（浏览器垃圾回收机制）" class="header-anchor">#</a> 3、闭包作用域练习题 1（浏览器垃圾回收机制）</h6> <div class="language- line-numbers-mode"><pre class="language-text"><code>let x = 5;
+function fn(x) {
+    return function(y) {
+    console.log(y + (++x));
+}
+}
+let f = fn(6);
+f(7);
+fn(8)(9);
+f(10);
+console.log(x);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h6 id="_4、闭包作用域练习题-2"><a href="#_4、闭包作用域练习题-2" class="header-anchor">#</a> 4、闭包作用域练习题 2</h6> <div class="language- line-numbers-mode"><pre class="language-text"><code>let a=0,
+b=0;
+function A(a){
+    A=function(b){
+    alert(a+b++);
+};
+    alert(a++);
+}
+A(1);
+A(2);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>专题练习：</p> <p>1、手写防抖函数
+函数防抖（debounce）和节流（throttle），在高频触发场景下需要防抖和节流。</p> <p>频繁的事件触发：</p> <p>window 的 resize、scroll</p> <p>mousedown、mousemove</p> <p>keyup、keydown ......</p> <p>防抖：触发事件后 n 秒后才执行，如果在 n 妙内又触发了事件，则会重新计算函数执行事件。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function debounce(func,wait,immediate){
+
+
+ if (typeof func !== &quot;function&quot;) throw new TypeError(&quot;func must be an function!&quot;);
+    if (typeof wait === &quot;undefined&quot;) wait = 500;
+
+
+    var timeout,result;
+    return function(){
+       var self = this;
+       var args = arguments;
+       if(timeout) clearTimeout(timeout);
+       if(immediate){
+           //如果已经执行过，不再执行
+           var callNow = !timeout;
+           timeout = setTimeout(function(){
+                timeout = null
+           },await)
+           if(callNow) result = func.apply(self,args)
+       }else{
+           timeout = setTimeout(function(){
+           result =  func.apply(self,args)
+       },wait);
+       }
+       return result;
+    }
+}
+
+
+注意四个问题：
+1、this指向
+2、event对象
+3、返回值
+4、判断是否是立刻执行
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>2、手写节流函数</p> <p>原理：如果持续触发事件，每隔一段时间，只执行一次。</p> <p>根据首次是否执行以及结束后是否执行，效果有所不同，实现方式也有所不同。</p> <p>leading：代表首次是否执行</p> <p>trailing：结束后是否再执行一次</p> <p>关于节流的实现，有两种主流的实现方式，一种是使用时间戳，一种是设置定时器。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//节流--使用时间戳
+function throttle(){
+    var self,args;
+    var previous = 0;
+    return function(){
+        var now = new Date()
+        self = this;
+        args = arguments;
+        if(now - previous &gt; await){
+            func.apply(self,args)
+            previous = now;
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>//节流--使用定时器
+function throttle(){
+    var timeout;
+    var previous = 0;
+    return function(){
+        context = this;
+        args = arguments;
+        if(!timeout){
+            timeout = setTimeout(function(){
+                timeout = null;
+                func.apply(context,args)
+            },await)
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// 第三版
+function throttle(func, wait) {
+    var timeout, context, args, result;
+    var previous = 0;
+
+    var later = function() {
+        previous = +new Date();
+        timeout = null;
+        func.apply(context, args)
+    };
+
+    var throttled = function() {
+        var now = +new Date();
+        //下次触发 func 剩余的时间
+        var remaining = wait - (now - previous);
+        context = this;
+        args = arguments;
+         // 如果没有剩余的时间了或者你改了系统时间
+        if (remaining &lt;= 0 || remaining &gt; wait) {
+            if (timeout) {
+                clearTimeout(timeout);
+                timeout = null;
+            }
+            previous = now;
+            func.apply(context, args);
+        } else if (!timeout) {
+            timeout = setTimeout(later, remaining);
+        }
+    };
+    return throttled;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>function throttle(func, wait) {
+    if (typeof func !== &quot;function&quot;) throw new TypeError(&quot;func must be an function!&quot;);
+    if (typeof wait === &quot;undefined&quot;) wait = 500;
+    let timer = null,
+        previous = 0; //记录上一次操作的时间
+    return function proxy(...params) {
+        let self = this,
+            now = new Date(), //当前这次触发操作的时间
+            remaining = wait - (now - previous);
+        if (remaining &lt;= 0) {
+            // 两次间隔时间超过wait了，直接执行即可
+            clearTimeout(timer);
+            timer = null;
+            previous = now;
+            func.call(self, ...params);
+        } else if (!timer) {
+            // 两次触发的间隔时间没有超过wait，则设置定时器，让其等待remaining这么久之后执行一次「前提：没有设置过定时器」
+            timer = setTimeout(function () {
+                clearTimeout(timer);
+                timer = null;
+                previous = new Date();
+                func.call(self, ...params);
+            }, remaining);
+        }
+    };
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h4 id="第二座大山：面向对象程序设计"><a href="#第二座大山：面向对象程序设计" class="header-anchor">#</a> 第二座大山：面向对象程序设计</h4> <h5 id="_1、对象思想开发出来的编程语言，所以我们学习和开发-js-的时候，也要按照面向对象的思想去处理！！"><a href="#_1、对象思想开发出来的编程语言，所以我们学习和开发-js-的时候，也要按照面向对象的思想去处理！！" class="header-anchor">#</a> 1、对象思想开发出来的编程语言，所以我们学习和开发 JS 的时候，也要按照面向对象的思想去处理！！</h5> <p><strong>内置类：</strong></p> <p>每一种数据类型都有一个自己所属的内置类：Number 数字类(每一个数字/NaN/Infinity 都是它的实例)、String、Boolean、Symbol、BigInt、Array、RegExp、Date、Function、Object...</p> <ul><li>每一种 DOM 元素也都有自己所属的类：
+window -&gt; Window -&gt; WindowProperties -&gt; EventTarget -&gt; Object
+document -&gt; HTMLDocument -&gt; Document -&gt; Node -&gt; EventTarget -&gt; Object
+div -&gt; HTMLDivElement -&gt; HTMLElement -&gt; Element -&gt; Node -&gt; ...</li></ul> <ul><li>HTMLCollection / NodeList / CSSStyleDeclaration /  DOMTokenList ...</li></ul> <p>学习数组，首先分析一个数组（实例），研究清楚这个实例的特征后（含：结构特点和常用方法等），我们再遇到其他的数组，直接也是按照相同的机制进行处理的</p> <p><strong>自定义类</strong>：</p> <p>创建一个函数 fn</p> <p>fn() 普通函数执行「堆栈机制」</p> <p>new fn() 构造函数执行 「堆栈机制 + 面向对象机制」</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Fn() {
+    /*
+     * EC(FN)
+     *   初始创建Fn找个类的一个实例对象  0x000
+     *   初始THIS:this-&gt;0x000
+     */
+    let total = 0; //上下文的私有变量  和实例对象没有必然的联系
+    this.x = 10; //this.xxx=xxx 都是给实例对象设置的私有属性和方法
+    this.y = 20;
+    this.say = function () { //0x000.say=0x100   0x001.say=0x101
+        console.log('SAY');
+    };
+    /* 如果不设置返回值，或者返回值是一个基本类型值，默认都会把实例对象 0x000 返回；如果手动返回的是一个引用数据类型值，则以自己返回的为主； */
+    // return {
+    //     name: 'zhufeng'
+    // };
+}
+let f1 = new Fn(); //-&gt;0x000
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>检测某个成员（属性/键）是否属于这个对象，或者是否属于这个对象的私有属性</p> <p>in:检测成员是否属于这个对象「特点：不论是私有属性，还是公有的属性，只要有则检测结果就是 true」</p> <p>hasOwnProperty:用来检测当前成员是否为对象的私有属性「特点：只有是私有属性，结果才是 ture，哪怕有这个属性，但是属于公有的属性，结果也是 false」</p> <p>** for in 遍历的时候**
+      无法遍历 Symobol 的私有属性
+      但是可以遍历到自己扩展的公共属性「内置的公共属性是不可枚举的（就是无法遍历到的）」
+      优先遍历数字属性，而且按照从小到大（不会严格按照属性书写的顺序）</p> <p>很多对“对象”的操作是无法拿到 Symbol 属性的</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> for (let key in obj) {
+    console.log(key); //-&gt;‘name’ ‘AAA’  
+    // for in遍历的时候
+    //  + 无法遍历Symobol的私有属性
+    //  + 但是可以遍历到自己扩展的公共属性「内置的公共属性是不可枚举的（就是无法遍历到的）」
+    //  + 优先遍历数字属性，而且按照从小到大（不会严格按照属性书写的顺序）
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>/* // 解决：能够避免遍历公共的</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>for (let key in obj) {
+    if (!obj.hasOwnProperty(key)) break;
+    //已经遍历到公共的，则私有已经遍历完，结束循环
+    console.log(key); //-&gt;'name'
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>解决：只想遍历私有的，包含 Symbol 的
+Object.keys:获取一个对象非 Symbol 的私有属性（结果是一个数组，数组中包含获取的属性）  
+类似的还有：Object.getOwnPropertyNames
+Object.getOwnPropertySymbols:只获取 Symbol 的私有属性（结果也是一个数组）</p> <h5 id="_2、new-fn-构造函数执行与-fn-普通函数执行异同："><a href="#_2、new-fn-构造函数执行与-fn-普通函数执行异同：" class="header-anchor">#</a> 2、new fn() 构造函数执行与 fn() 普通函数执行异同：</h5> <p>相同：</p> <p>一样把函数执行（传递参数也是一样）</p> <p>形成私有上下文[按照步骤逐一处理</p> <p>也存在私有变量</p> <p>...</p> <p>不同：</p> <p>new 执行，浏览器会在当前上下文中，默认创建一个对象（实例对象）</p> <p>在初始化 this 的时候，会让 this 指向这个实例对象</p> <p>代码编写中，this.xxx = xxx 的操作，都是在给实例对象设置私有属性</p> <p>除这些操作，其他的操作和实例对象没有直接关系</p> <p>函数如果没有返回值，或者返回的是基本类型值，则默认返回创建的实例对象；如果自己返回的是应用类型值，以自己的返回为主。</p> <p>构造函数执行：函数成为类，返回结果是类的一个实例。</p> <h5 id="_3、面向对象基础「搞定原型和原型链」"><a href="#_3、面向对象基础「搞定原型和原型链」" class="header-anchor">#</a> 3、面向对象基础「搞定原型和原型链」-</h5> <p>JS 中面向对象的底层处理机制：</p> <p>1、每一个函数数据类型（除箭头函数），都天生自带一个属性：prototype 原型属性，属性值是一个对象（Function.prototype 除外），并且原型对象中自带一个属性：constructore，属性值是当前构造函数本身。
+普通函数、箭头函数、生成器函数</p> <p>构造函数[自定义类]</p> <p>内置类[内置构造函数]...</p> <p>prototype 针对类有用，对于普通函数没啥用</p> <p><strong>存储供当前类所属实例调用的公共属性和方法</strong></p> <p>2、每一个对象类型值，都天生自带一个属性：<strong>proto</strong>原型链属性（隐式原型），属性值指向所属类的原型对象 prototype</p> <p>普通函数、数组对象、正则对象、日期对象...</p> <p>prototype 原型对象</p> <p>实例对象</p> <p>函数也是对象</p> <p>所有对象都是 Object 内置类的一个实例</p> <p>...
+<strong>为了找到所属类原型上的公共方法</strong></p> <p><strong>原型链</strong>：首先找自己私有的属性，私有中存在的就是私有属性；私有中不存在，则默认基于<strong>proto</strong>找所属类 prototype 上的，如果还没有，则基于 prototype 上的<strong>proto</strong>继续向上查找...直到找到 Obeject.prototype 为止【我们把这个查找机制称为原型链】</p> <p><strong>proto</strong>:null</p> <p>为什么是 null？</p> <p>Object.prototype 原型对象也是对象类的一个实例，<strong>proto</strong>如果要指向就是指向自己，这样没有意义；所以作为基类上的<strong>proto</strong>是 null 即可</p> <p>3、原型重定向的处理</p> <p>构造函数的‘原型重定向’</p> <p>优势：</p> <p>1、把原型上其实例提供的公共属性和方法，全部写在一起了，提高整体性后者模块性</p> <p>2、向其原型上扩展方法会容易些</p> <p>弊端：</p> <p>1、重定向后的原型对象中，缺失了 constructor 属性
+解决：
+fun.prototype = {
+手动设置 constructor:fun ，保证结构完整性
+}</p> <p>2、 如果原始内置的原型对象中具备了一些属性和方法，此时重定向之后，之前设置的公共属性方法就丢失了</p> <p>解决：</p> <p>fun.prototype = Object.assign(fun.prototype,{...})</p> <p>这种合并的办法，Fn.prototype 还是之前的堆地址，只不过是把新对象中的内容全部扩展到了原始的堆中 */</p> <p><strong>Object.assign:合并两个对象「浅比较」</strong></p> <p>Object.assign(obj1, obj2)); //-&gt;浅比较：obj2.n 直接覆盖 obj1.n</p> <p>Fn.prototype = Object.assign({}, Fn.prototype, proto); //-&gt;这样合并，最后返回的是一个全新的对象，由于内置的 Fn.prototype 中的 constructor 是内置的不可枚举的属性，所以合并后也是无法赋给新对象的 */</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/* let obj = {
+    fn1() {},
+    fn2: function fn2() {}
+    // 两者写法的区别：
+    //   + 第一种写法：obj.fn1函数是没有prototype属性的 「不能被作为构造函数」
+    //   + 第二种写法：和正常的函数没有区别
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>内置原型扩展方法</strong></p> <p>Array String Number Symbol RegExp Date ...</p> <p>Element Node EventTarget Nodelist HTMLCollection</p> <p>/*
+ * 向内置类的原型扩展方法
+ *   + 内置类的原型上提供了很多内置方法，但是这些方法不一定完全满足业务需求，此时需要我们自己扩展一些方法
+ *  「优势」
+ *   + 调用起来方便
+ *   + 可以实现链式写法
+ *   + 限定调取方法的类型，必须是指定类的实例
+ *   + 扩展的方法，各个模块「其他成员」都可以直接的调用
+ *   + ...
+ *  「弊端」
+ *   + 自己扩展的方法，容易覆盖内置的方法 （解决：自己设定的方法名要设置前缀 myUnique）
+ *     Array.prototype={...} 这样操作是无效的，也怕你一行代码，把数组方法全干没了
+ *   + 基于 for in 遍历的时候，会把自己扩展到原型上的方法也遍历到
+ *   + ...
+ */</p> <p>所有对象都是 Object 的一个实例
+它的<strong>proto</strong>直接指向 Object.prototype 纯粹的对象</p> <p>通过它的原型链一层层找，最后能找到 Object.prototype 的</p> <p>所以所有的对象，都可以调取 Obeject.prototype 上的方法</p> <p>“链式写法”：执行完成一个方法，返回的结果是某个实例，则可以继续调用这个实例所属类原型上的方法...</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+// Array.prototype.unique = function unique() {
+//     // this:一般都是当前要操作的实例(也就是要操作的数组)
+//     let obj = {},
+//         self = this;
+//     for (let i = 0; i &lt; self.length; i++) {
+//         let item = self[i];
+//         if (obj.hasOwnProperty(item)) {
+//             // 数组之前出现过这一项，当前项就是重复的，我们此时删除当前项即可
+//             self.splice(i, 1);
+//             i--;
+//             continue;
+//         }
+//         obj[item] = item;
+//     }
+//     return self; //实现链式写法
+// };
+
+
+
+arr.sort().reverse().push(&quot;zrb&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h5 id="_4、面向对象进阶："><a href="#_4、面向对象进阶：" class="header-anchor">#</a> 4、面向对象进阶：</h5> <p>一、<strong>new 执行的原理</strong>
+1、创建实例对象
+2、会像普通函数一样，让其执行[THIS 指向实例对象]
+3、返回值没有或者是基本值，则返回的是实例对象（处理返回值）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function _new(Ctor, ...params) {
+    // 1.创建一个实例对象「创建Ctor类的实例：实例.__proto__ -&gt; 类.prototype」
+    /* let obj = {};
+    obj.__proto__ = Ctor.prototype; */
+    let obj = Object.create(Ctor.prototype);
+    // 2.把函数执行「THIS指向实例对象」  call-&gt;执行函数,改变函数中的THIS
+    let result = Ctor.call(obj, ...params);
+    // 3.处理返回值
+    if (result !== null &amp;&amp; /^(object|function)$/.test(typeof result)) return result;
+    return obj;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>二、函数多种角色</p> <p>函数的多种角色：
+函数:（第一角色：函数 一等公民）
+普通函数--&gt;作用域
+构造函数[类] --&gt; 原型和原型链
+对象：--&gt;键值对
+三种角色之间没有必然联系</p> <p>所有的函数都(普通函数、自定义函数、内置构造函数)是 Function 内置类的实例</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>函数.__proto__ = Function.prototype
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Function.prototype:类型是一个 empty/anonymous
+匿名空函数（）</p> <p>三、this 的处理和应用（5 中情况梳理）</p> <p>事件绑定</p> <p>函数执行（包括自执行函数）</p> <p>new 构造函数</p> <p>箭头函数：没有 this，用到的 this 都是所处上下文中的 this</p> <p>call/apply/bind</p> <p>Function.prototype call applay bind 都是用来改变 this 指向，以后函数执行调用这三个方法就可以实现 this 的改变</p> <p>==CALL/APPLY== 都是立即执行函数，并且改变函数中的 THIS，再并且给函数传递参数信息</p> <p>==BIND== 并不会把函数立即执行，它是预先处理函数中的 THIS 和参数的</p> <h4 id="面向对象作业题讲解"><a href="#面向对象作业题讲解" class="header-anchor">#</a> 面向对象作业题讲解</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>//ES6基于class创建类
+class Model {
+    //给实例设置私有属性
+    //构造函数体
+    constructor(x,y){
+        this.x = x;
+        this.y = y;
+    }
+    // z = 100 // 相当于在构造函数体中this.z = 100
+    //构造函数原型上设置方法[实例的公共属性],设置方法可以，设置属性不可以
+    gexX(){
+        console.log(this.x);
+    }
+    getY(){
+        console.log(this.y);
+    }
+    //给构造函数设置静态属性方法[把它当做普通对象] Model.setNumber()
+    static n = 200
+    static setNumber(n){
+        this.n = n
+    }
+}
+Model.prototype.z = 100
+let m = new Model()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>var a = ?;
+if (a == 1 &amp;&amp; a == 2 &amp;&amp; a == 3) {
+console.log('OK');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>绝对相等：左右两边类型和值都相等</p> <p>相等：左右两边类型不同，会默认先转换为形同类型再去比较</p> <p>对象==字符串：对象转字符串    
+ *    null==undefined：相等，但是和其它值都不等
+ *    NaN==NaN：false NaN 和谁都不相等
+ *     剩余的都是转换为数字</p> <p>对象-&gt;数字/字符串
+ *    + 先调取这个属性 Symbol.toPrimitive
+ *    + 没有这个属性，再去调用 valueOf 获取原始值「基本类型值」
+ *    + 没有原始值，再去调用 toString 变为字符串
+ *    + 如果最后是转换为数字，再去调用 Number，把字符串转换为数字</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+// 方案1:数据类型转换
+
+/* var a = {
+   i: 0
+};
+// Symbol.toPrimitive/valueOf/toString...
+a[Symbol.toPrimitive] = function () {
+   // this -&gt; a
+   return ++this.i;
+};
+if (a == 1 &amp;&amp; a == 2 &amp;&amp; a == 3) {
+   console.log('OK');
+} */
+/* var a = [1, 2, 3];
+a.toString = a.shift;
+if (a == 1 &amp;&amp; a == 2 &amp;&amp; a == 3) {
+   console.log('OK');
+}
+
+
+// 方案2：数据劫持
+//   + 在全局上下文中基于var/function声明变量，相当于给window设置对应的属性  -&gt; window.a
+//   + Object.defineProperty劫持对象中某个属性的获取和设置等操作
+var i = 0;
+Object.defineProperty(window, 'a', {
+   get() {
+       // 获取window.a的时候触发getter函数
+       return ++i;
+   },
+   // set(value) {
+   //     // 设置window.a属性值的时候触发setter函数
+   // }
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>
+/*
+* 编写queryURLParams方法实现如下的效果（至少两种方案）
+*/
+let url=&quot;http://www.zhufengpeixun.cn/?lx=1&amp;from=wx#video&quot;;
+console.log(url.queryURLParams(&quot;from&quot;)); //=&gt;&quot;wx&quot;
+console.log(url.queryURLParams(&quot;_HASH&quot;)); //=&gt;&quot;video&quot;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>使用正则</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+/* String.prototype.queryURLParams = function queryURLParams(key) {
+    // this-&gt;url  key-&gt;property
+    // 获取信息
+    var self = this,
+        link = document.createElement('a'),
+        hash = '',
+        search = '',
+        result = {};
+    link.href = self;
+    hash = link.hash;
+    search = link.search;
+    // 解析结果
+    if (hash) {
+        hash = hash.substring(1);
+        result['_HASH'] = hash;
+    }
+    if (search) {
+        search = search.substring(1);
+        search.split('&amp;').forEach(function (item) {
+            item = item.split('=');
+            result[item[0]] = item[1];
+        });
+    }
+    // 返回信息
+    return typeof key === &quot;undefined&quot; ? result : result[key];
+}; */
+/* String.prototype.queryURLParams = function queryURLParams(key) {
+    var self = this,
+        result = {};
+    self.replace(/#([^?#=&amp;]+)/g, function (_, $1) {
+        result['_HASH'] = $1;
+    });
+    self.replace(/([^?#=&amp;]+)=([^?#=&amp;]+)/g, function (_, $1, $2) {
+        result[$1] = $2;
+    });
+    return typeof key === &quot;undefined&quot; ? result : result[key];
+};
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><h5 id="对象、数组克隆-浅克隆"><a href="#对象、数组克隆-浅克隆" class="header-anchor">#</a> 对象、数组克隆[浅克隆]</h5> <p>es6 循环遍历   内置方法
+浅克隆：只处理对象或数组的第一级内容，剩下的都是<strong>公用</strong>的，这样克隆后的结果和之前还是有一定的关联
+深克隆：
+JSON.parse/stringify[变为字符串，再变为对象，这样所有的内存会重新开辟]；
+无法转为字符串，不是所有的值都支持：
+正则变为空对象
+BigInt 处理不了，会报错
+属性为 undefined 或者函数的都会消失
+日期对象变为字符串后转换不回来
+ArrayBuffer...</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  /**
+     * 判断给定的对象是否是一个普通对象
+     * @method isObject
+     * @param { * } object 需要判断的对象
+     * @return { Boolean } 给定的对象是否是普通对象
+     */
+    utils.each(['String', 'Function', 'Array', 'Number', 'RegExp', 'Object', 'Date'], function (v) {
+        UE.utils['is' + v] = function (obj) {
+            return Object.prototype.toString.apply(obj) == '[object ' + v + ']';
+        }
+    });
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>function shallowClone(source,target){
+ //数组或对象，基于循环的方案处理
+ //处理判断数据类型
+  var tep;
+  target = target || {}
+  for(var i in source){
+    if(source.hasOwnProperty(i)){
+        tep = source[i];
+        if(typeof tep == &quot;object&quot;){
+            target[i] = Array.isArray(tep) ? [] : {};
+            shallowClone(source[i], target[i])
+        }else{
+            target[i] = tep;
+        }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h4 id="异步同步"><a href="#异步同步" class="header-anchor">#</a> 异步同步</h4> <p>“Ajax 串行”
+传统实现异步操作，并且是串行的模式下，基本都是回调函数嵌套回调函数“回调地狱”问题。</p> <p>异步：上面的事情没有完成，也不会等，下面的事情继续处理</p> <p>同步：上面事情没处理完之前，下面事情是无法去处理的</p> <p>需要优秀的代码管理模式，能够有效的管理异步编程中的代码，通过这种代码管理思想，让代码开发起来更便捷，维护起来更方便，可读性更强。JS 设计模式 Promise 设计模式就是异步编程</p> <h5 id="promise：es6-新增加的类，它是一种承诺模式，有效管控-js-中的异步编程，可以解决异步编程中产生的回调“地狱”；"><a href="#promise：es6-新增加的类，它是一种承诺模式，有效管控-js-中的异步编程，可以解决异步编程中产生的回调“地狱”；" class="header-anchor">#</a> Promise：ES6 新增加的类，它是一种承诺模式，有效管控 JS 中的异步编程，可以解决异步编程中产生的回调“地狱”；</h5> <ul><li>PROMISE 的 executor 函数和状态</li></ul> <p>executor</p> <p>PROMISE 状态</p> <p>pending 初始状态</p> <p>fulfilled/resolved 操作成功完成</p> <p>rejected 操作失败</p> <ul><li>PROMISE 中的 THEN 和 CATCH</li></ul> <p>then(func1,func2) / then(func)</p> <p>catch(func)then 链机制</p> <ul><li>PROMISE 中其它常用方法</li></ul> <p>Promise.all 取决于多个 promise 实例中是否出现有失败态的</p> <p>Promise.race</p> <p>Promise.reject</p> <p>Promise.resolve 直接返回指定状态的 promise 实例</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const myFirstPromise = new Promise((resolve, reject) =&gt; {
+  // ?做一些异步操作，最终会调用下面两者之一:
+  //
+  //   resolve(someValue); // fulfilled
+  // ?或
+  //   reject(&quot;failure reason&quot;); // rejected
+
+  resolve执行：修改promise实例的态,fulfilled/resolved,
+  成功的结果就是传递的实参信息
+
+  reject执行：修改promise实例的状态rejected,失败的原因也是传递的实参信息
+
+//resolve(&quot;ok&quot;)
+//立即修改状态和值，通知基于then注入的方法，此时.thena还没执行，不知道通知谁来执行，先把通知执行操作保存起来，&quot;通知对应注入这个方法执行&quot;这个操作是异步，只是把它排列到等待任务队列中，当其他事情处理完，再次返回头，通知对应注入方法执行
+ });
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>//new promise 的时候
+//立即执行传递的 executor 函数[同步]
+//在 executor 函数中一般用来管控一个异步的操作
+//而且传递给 executor 函数两个参数，resolve，reject，并且这两个参数都是函数
+//创造 Promise 类的一个实例：
+//[[PromiseState]]promise 状态：pending 准备状态 fulfilled/resolved 成功 兑现状态 rejected 失败(已拒绝)
+//[[PromiseResult]]promise 值：默认是 undefined，一般存储成功的结果或者失败的原因</p> <p>ps：new Promise 创建实例，其状态和结果，取决于：executor 函数中的 resolve/reject 执行 &amp; executor 函数执行是否报错</p> <p>.then(onfulfilled,onrejected)
+onfulfilled,onrejected 返回的新实例，其成功或者失败
+.catch(onrejected) ==&gt; .then(null,onrejected)如果某个参数不处理，会顺延到下一个.then 中指定状态要执行的方法</p> <p>返回结果是一个全新的 Promise 实例，则这个实例的成功或失败等内容决定了 P2 的成功或者失败等内容</p> <p>//<strong>proto</strong>  ==&gt; Promise.prototype:then/catch/finally</p> <p>//真实项目中，在多个 then 链下，其余的 then 方法基本都存放的是成功处理的事情，最后一个 then 存放失败的 ，这样不论是第一次或者其中一次，导致 promise 实例状态是失败的，都会<strong>延顺</strong>到最后一个失败的处理函数上进行处理...</p> <p>then(null,reason =&gt; {...}) 用 catch(reason=&gt;{...})来代替</p> <p>.then
+  当前实例状态已经是成功或者失败，此时创建一个异步微任务，等待同步业务结束，根据成功或者失败，来决定执行哪个方法
+如果此时的状态还是 pending，则直接把方法存储起来即可，没有创建异步的微任务
+resolve/reject 的时候，创建一个异步任务，等待同步结束后，根据状态执行基于.then 动态存储的函数</p> <p>then(onfulfilled,onrejected):执行 then 方法只是把 onfulfilled,onrejected 函数保存起来[同步]，但是此时还没有执行，当 promise 状态变为成功或者失败的时候，才会去触发执行对应的函数【异步-&gt;微任务】</p> <p>//同时处理多个 Promise 实例：
+//Promise.all 等待所有的 Promise 实例都成功，整体返回状态才是成功，只是有一个失败，整体状态就是失败 -- 都成功，result 是按照之前设定的顺序依次存储每一个 promise 的结果
+//只要在处理过程中有一个失败的，则立即结束处理，p 也是失败的，谁失败的，记录谁失败的原因
+//Promise.race 看多个实例谁先处理完，先处理完的状态[不论是失败还是成功]就是最后整体的状态
+//ajax 并行：同时发送多个异步的 ajax 请求（三者之间没有依赖关系），但是需要所有的异步请求都处理成功后，再去统一做什么事情</p> <p><strong>async await [ES7 增加]</strong></p> <p>async:修饰函数，最后默认让函数返回一个 promise 实例（函数执行报错，实例状态是失败，结果是报错原因；否则实例状态是成功，结果是 return 后的值）--一般都配合 await 的[函数中使用 await，则必须基于 asnc 修饰才可以</p> <p>await “promise 实例”：如果设置的不是 promise 实例
+  + 正常的值  await 10 -&gt; await Promise.resolve(10)
+  + 函数执行  await xxx() -&gt; 首先立即执行 xxx 函数，接收它的返回值 -&gt; await 返回值
+本身是异步微任务：把当前上下文中 await 下面要执行的代码整体存储到异步的微任务中，当 await 后面的 promise 实例状态为成功后，再去执行下面的代码(也就是那个异步的微任务)</p> <p>对失败的 promise 实例没有做异常的处理，则控制台抛出异常信息「不会影响后续代码执行」</p> <p>//    + promise.catch(reason=&gt;{})
+//    + await 需要自己基于 try catch 做异常捕获</p> <p>练习题：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> let body = document.body;
+body.addEventListener('click', function () {
+    Promise.resolve().then(() =&gt; {
+        console.log(1);
+    });
+    console.log(2);
+});
+body.addEventListener('click', function () {
+    Promise.resolve().then(() =&gt; {
+        console.log(3);
+    });
+    console.log(4);
+});
+
+
+
+setTimeout(() =&gt; { //宏任务1
+    console.log('a');
+});
+Promise.resolve().then(() =&gt; { //微任务1 「进入到微任务队列即执行」
+    console.log('b');
+}).then(() =&gt; { //微任务2 「微任务1执行完即可」
+    return Promise.resolve('c').then(data =&gt; { //微任务4 「进入到微任务队列立即执行」
+        setTimeout(() =&gt; { //宏任务2
+            console.log('d')
+        });
+        console.log('f');
+        return data;
+    });
+}).then(data =&gt; { //微任务3 「微任务2执行完，并且告知其promise实例是成功的才可以执行」
+    console.log(data);
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>function func1() {
+    console.log('func1 start');
+    return new Promise(resolve =&gt; {
+        resolve('OK');
+    });
+}
+function func2() {
+    console.log('func2 start');
+    return new Promise(resolve =&gt; {
+        setTimeout(() =&gt; {//宏任务2
+            resolve('OK');
+        }, 10);
+    });
+}
+console.log(1);
+setTimeout(async () =&gt; {//宏任务1
+    console.log(2);
+    await func1();
+    console.log(3);//微任务3
+   
+}, 20);
+for (let i = 0; i &lt; 90000000; i++) {} //循环大约要进行80MS左右
+console.log(4);
+func1().then(result =&gt; {//微任务1
+    console.log(5);
+});
+func2().then(result =&gt; {//微任务2
+    console.log(6);
+});
+setTimeout(() =&gt; {//宏任务3
+    console.log(7);
+}, 0);
+console.log(8);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>首先在微任务中查找，如果有&quot;可执行的”，一定先执行微任务，再去执行宏任务。</p> <p>微任务执行顺序：</p> <p>“可执行“才可以拿出来执行，如果多个可执行，谁先放置的 先执行谁</p> <p>宏任务执行顺序：</p> <p>可执行“才可以拿出来执行，如果多个可执行，看谁先到的[定时器]</p> <p><strong>Promise A</strong></p> <p>(JS 实现 Promise「遵循的是 Promise A Plus 规范）https://promisesaplus.com/]</p></div> <!----> <!----> <!----> <div class="page-edit" data-v-23c3ef88><!----> <div class="last-updated" data-v-23c3ef88><span class="prefix" data-v-23c3ef88>Last Updated: </span> <span class="time" data-v-23c3ef88>4/17/2022, 5:16:59 PM</span></div></div> <!----> </div> <div class="valine-wrapper" data-v-1fab1fd0><div id="valine" data-v-1fab1fd0></div></div> <!----> <!----> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-41016a8b data-v-41016a8b><i class="iconfont reco-up" data-v-41016a8b></i></div></div></div></div>
+    <script src="/assets/js/app.25f0ea44.js" defer></script><script src="/assets/js/25.d7829336.js" defer></script>
+  </body>
+</html>
